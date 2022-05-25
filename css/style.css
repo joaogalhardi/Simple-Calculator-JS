@@ -1,0 +1,93 @@
+body{
+  background-color: whitesmoke;
+  box-sizing: border-box;
+  background-image: url('../img/calculator-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+main{
+  display: grid;
+  grid-template-columns: minmax(300px, 1fr);
+  width: 400px;
+  margin: 200px auto;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  box-shadow: 1px 1px 8px;
+  border-radius: 45px;
+}
+
+main h1{
+  text-align: center;
+}
+
+main input#n1{
+  font-size: 20px;
+  border-radius: 5px;
+  outline-color: rgba(255, 217, 0, 0.753);
+  border-color: gray;
+  justify-self: center;
+}
+
+main select{
+  font-size: 20px;
+  margin-top: 8px;
+  text-align: center;
+  justify-self: center;
+  border-radius: 25px;        
+  outline-color: rgba(255, 217, 0, 0.753);
+}
+
+main select option{
+  font-size: 20px;
+  text-align: center;
+  background: gray;
+  color: white;
+}
+
+main input#n2{
+  font-size: 20px;
+  border-radius: 5px;
+  margin-top: 8px;
+  outline-color: rgba(255, 217, 0, 0.753);
+  border-color: gray;
+  justify-self: center;
+}
+
+main input#n2::placeholder{
+  font-size: 16px;
+  text-align: center;
+}
+
+main button{
+  margin-top: 8px;
+  justify-self: center;
+  color: white;
+  background-color: black;
+  padding: 5px 20px;
+  border-radius: 25px;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  transition: .3s ease;
+  outline-color: rgba(255, 217, 0, 0.753); 
+}
+
+main button:hover{
+  cursor: pointer;
+  background-color: rgb(230, 195, 2);
+  color: black;
+}
+
+main h2{
+  text-align: center;
+}
+
+
+@media screen and (max-width:410px){
+  main{
+    width: 300px;
+  }
+}
